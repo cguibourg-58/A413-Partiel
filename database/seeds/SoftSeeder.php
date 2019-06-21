@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class SoftSeeder extends Seeder
 {
@@ -11,7 +12,7 @@ class SoftSeeder extends Seeder
      */
     public function run()
     {
-        $drinks = [
+        $softs = [
             'Coca-Cola',
             'Eau Plate',
             'Jus d\'Orange',
@@ -24,8 +25,8 @@ class SoftSeeder extends Seeder
             'Fanta',
             'Coca-cola Zero'
         ];
-        foreach ($drinks as $drink) {
-            DB::table('softs')->insert(['name' => $drink]);
+        foreach ($softs as $soft) {
+            DB::table('softs')->insert(['name' => $soft]);
         }
     }
 }

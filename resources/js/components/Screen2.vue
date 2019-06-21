@@ -29,7 +29,7 @@ export default {
     methods: {
         setAlcohol(alcohol) {
             this.$store.commit('setAlcohol', alcohol)
-            this.$router.push('/soft')
+            this.$router.push('/thank-you')
         },
     }
 }
@@ -41,7 +41,6 @@ export default {
         font-weight: 800;
         font-family: 'Roboto Condensed', 'Roboto', sans-serif;
     }
-
     h2 {
         letter-spacing: 0.3rem;
     }
@@ -49,7 +48,6 @@ export default {
         max-width: 150px;
         height: 120px;
     }
-
     .btn-light {
         height: 120px;
         width: 120px;
